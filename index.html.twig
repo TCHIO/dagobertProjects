@@ -1,0 +1,14 @@
+<html>
+        <body>
+                <h1>Liste des Bonobos</h1>
+                {% for bono in Bonobos %}
+                        <p>{{bono.id}}</p>
+                        <p>{{bono.age}}</p>
+                        <p>{{bono.race}}</p>
+                        <p>{{bono.Nourriture}}</p>
+                        <p>{{bono.famille}}</p>
+                {% else %}
+                        <p>Aucune famille n'a été trouvée.</p>
+                {% endfor %}
+        </body>
+</html>

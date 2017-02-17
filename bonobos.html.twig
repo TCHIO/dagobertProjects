@@ -1,0 +1,30 @@
+<html>
+        <body>
+          <table whidth = "70%">
+            <caption> <h1>Liste des bonobos</h1> </caption>
+            <thead>
+              <tr align="center">
+                <th>Identifiant</th>
+                <th>Age</th>
+                <th>Race</th>
+                <th>Nouriture</th>
+                <th>Famille</th>
+              </tr>
+          </thead>
+
+            <tbody>
+              <h1>Liste des Bonobos</h1>
+              {% for bono in Bonobos %}
+                  <td>{{bono.id}}</td>
+                  <td>{{bono.age}}</td>
+                  <td>{{bono.race}}</td>
+                  <td>{{bono.Nourriture}}</td>
+                  <td>{{bono.famille}}</td>
+              {% else %}
+                      <p>Aucune famille n'a été trouvée.</p>
+              {% endfor %}
+
+            </tbody>
+            </table>
+        </body>
+</html>

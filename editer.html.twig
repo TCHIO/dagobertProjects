@@ -1,0 +1,16 @@
+<html>
+  <body>
+
+    <h1>Ajouter un bonobos</h1>
+
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <input type="submit" />
+    </form>
+    <p><a href="{{ path('myapp_bonobo_lister') }}">Retour à la liste des bonobos</a></p>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+        <body>
+                <h1>Liste des Familles</h1>
+                {% for fam in Familles %}
+                        <p>{{fam.nom_famille}}</p>
+                        
+                {% else %}
+                        <p>Aucune famille n'a été trouvée.</p>
+                {% endfor %}
+        </body>
+</html>

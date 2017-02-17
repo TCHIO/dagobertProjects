@@ -1,0 +1,3 @@
+my_app_bonobos_friends:
+    resource: "@MyAppBonobosFriendsBundle/Resources/config/routing.yml"
+    prefix:   /
